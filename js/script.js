@@ -6390,3 +6390,31 @@
     }.call(this, n(0)));
   },
 ]);
+
+
+// FORM
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById('form');
+  form.addEventlistener("submit", formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+
+    let formData = new FormData(form);
+    let response = await fetch('sendmail.php', {
+      method: "POST" ,
+      body: formData
+    });
+    if(response.ok) {
+      let result = await response.json();
+      alert(result.message);
+      formPreview.innerHTML = "";
+      form.reset();
+      form.classList.remove('form__data')
+    } else {
+      alert('Ошибка');
+      form.classList.remove('form__data');
+    }
+  }
+})

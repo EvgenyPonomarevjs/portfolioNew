@@ -10,7 +10,7 @@
 
 .tetris {
     position: absolute;
-    background:url(https://ai-development.ru/wp-content/uploads/2019/04/preloader.gif) no-repeat 50%;
+    background: url(https://ai-development.ru/wp-content/uploads/2019/04/preloader.gif) no-repeat 50%;
     background: url('./img/gif/preloader.gif') no-repeat 50%;
     height: 128px;
     width: 128px;
@@ -534,6 +534,7 @@ main {
     opacity: 0.8;
 }
 
+
 #portfolio .portfolio-item figure figcaption {
     padding: 2em 1.5em;
     color: #000;
@@ -719,6 +720,7 @@ main {
     padding: 0 15px;
     margin: 0 auto
 }
+
 .advantage__title {
     font-weight: 700;
     font-size: 30px;
@@ -781,6 +783,7 @@ main {
 .advantage__item_copyright {
     background-image: url(/img/newf/copyright.svg)
 }
+
 /* ABOUT */
 #about {
     background-color: #ffffff;
@@ -820,74 +823,6 @@ main {
     margin-bottom: 5px;
 }
 
-/* CONTACT */
-#contact {
-    padding: 50px 0 100px;
-    min-height: 700px;
-}
-
-#contact .contact-form {
-    padding: 0 30px;
-    text-align: center;
-}
-
-#contact .contact-form>div {
-    opacity: 0;
-}
-
-#contact .contact-form .g-recaptcha {
-    opacity: 1;
-    margin-bottom: 25px;
-}
-
-#contact .contact-form .contact-description {
-    margin-bottom: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-}
-
-#contact .contact-form input,
-#contact .contact-form textarea {
-    width: 100%;
-    margin-bottom: 25px;
-    padding: 10px;
-    border: 2px solid #aaaaaa;
-    border-radius: 6px;
-    transition: all 0.3s;
-}
-
-#contact .contact-form textarea {
-    resize: vertical;
-}
-
-#contact .contact-form input:focus,
-#contact .contact-form textarea:focus {
-    border: 2px solid #666666;
-}
-
-#contact .contact-form input.submit {
-    width: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #333333;
-    border: 2px solid #333333;
-    transition: all 0.3s;
-    color: #ffffff;
-    margin: auto;
-    font-size: 26px;
-    cursor: pointer;
-}
-
-#contact .contact-form input.submit:hover {
-    background-color: #f0f0f0;
-    color: #111111;
-}
-
-#contact .success-form-sending {
-    display: none;
-    color: forestgreen;
-    text-align: center;
-}
 
 /* MEDIA */
 @media (min-width: 576px) {
@@ -1049,14 +984,16 @@ main {
 ::-webkit-scrollbar {
     width: 15px;
 }
+
 ::-webkit-scrollbar-track {
     background: #ffffff;
     border-radius: 5px;
 
 }
+
 ::-webkit-scrollbar-thumb {
-    background:#000;
+    background: #000;
     border-radius: 3px;
     transform: skew(30deg, 20deg);
-    
+
 }
