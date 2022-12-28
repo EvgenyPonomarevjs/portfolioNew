@@ -507,12 +507,13 @@ main {
 /* FROM GRID */
 #portfolio .portfolio-item {
     position: relative;
-    max-width: 600px;
+    max-width: 400px;
+    max-height: 400px;
     opacity: 0;
 }
 
 #portfolio .portfolio-item h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #portfolio .portfolio-item .picture-text h3 {
@@ -529,9 +530,12 @@ main {
 #portfolio .portfolio-item figure img {
     position: relative;
     display: block;
-    min-height: auto;
-    width: 100%;
-    opacity: 0.8;
+    max-width: 100%;
+    min-width: 300px;
+    max-height: 400px;
+    min-height: 400px;
+    height: auto;
+    opacity: 0;
 }
 
 
